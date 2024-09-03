@@ -2,22 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+      font-family: "Barlow", sans-serif;
+      /*  font-family: "Fraunces", serif; */
+    
 }
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: blue;
     align-items: center;
     padding: 2rem 3rem;
     
 }
-ul{
+
+a{
+    color:white;
+    text-decoration: none;
+}
+.contact{
+background-color: white;
+border-radius: 20px;
+color: hsl(212,27%,19%);
+text-transform: uppercase;
+padding: 10px 15px;
+font-weight: 700;
+ font-family: "Fraunces", serif;
+}
+.navLinks{
+    display: none;
+    
+}
+.icon{
+    color: white;
+}
+
+h1{
+   text-transform:uppercase ;
+   text-align: center;
+   color: white;
+    font-family: "Fraunces", serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+}
+.heroSection img{
+    display: block;
+    margin: auto;
+    padding-bottom: 10rem;
+}
+.firstSection{
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* code for responsiveness */
+@media screen and (min-width:1024px) {
+    .navLinks{
     list-style: none;
     display: flex;
     gap: 2rem;
 
+
 }
-a{
-    color:white;
-    text-decoration: none;
+.icon{
+    display: none;
+}
 }
