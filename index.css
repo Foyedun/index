@@ -4,7 +4,7 @@
     box-sizing: border-box;
       font-family: "Barlow", sans-serif;
       /*  font-family: "Fraunces", serif; */
-    
+   
 }
 nav{
     display: flex;
@@ -35,7 +35,7 @@ font-weight: 700;
     color: white;
 }
 
-h1{
+.creative{
    text-transform:uppercase ;
    text-align: center;
    color: white;
@@ -54,6 +54,36 @@ h1{
     background-position: center;
     background-size: cover;
 }
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start; /* Align items at the top */
+    height: auto;
+    gap: 0; /* No gap between text and image */
+}
+
+.transform {
+    background-color: white;
+    text-align: center;
+   
+    padding: 2rem;
+    
+}
+
+.transform h1 {
+    color: hsl(198, 62%, 26%);
+     font-family: "Fraunces", serif;
+}
+
+.egg{
+    display: grid;
+
+}
+.egg img{
+    width: 100%;
+}
+
+
 /* code for responsiveness */
 @media screen and (min-width:1024px) {
     .navLinks{
@@ -65,5 +95,15 @@ h1{
 }
 .icon{
     display: none;
+}
+.egg{
+    grid-template-columns: repeat(2,1fr);
+}
+.transform{
+    order: 1;
+}
+.egg img{
+
+order: 2;
 }
 }
